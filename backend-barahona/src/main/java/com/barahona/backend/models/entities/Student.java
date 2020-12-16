@@ -19,8 +19,8 @@ public class Student extends Person implements Serializable {
 	@Basic(optional = false)
 	private Long idStudent;
 	
-	@Column(name = "adress", length = 200)
-	private String adress;
+	@Column(name = "address", length = 200)
+	private String address;
 	
 	@Column(name = "start_from")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -48,12 +48,12 @@ public class Student extends Person implements Serializable {
 		this.idStudent = idStudent;
 	}
 
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String adress) {
+		this.address = adress;
 	}
 
 	public Calendar getStartFrom() {
